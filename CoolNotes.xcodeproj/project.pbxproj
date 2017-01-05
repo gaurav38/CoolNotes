@@ -14,6 +14,15 @@
 		C67D4BF61E14AF6A00798008 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C67D4BF41E14AF6A00798008 /* LaunchScreen.storyboard */; };
 		C67D4C011E14AF6A00798008 /* CoolNotesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C001E14AF6A00798008 /* CoolNotesTests.swift */; };
 		C67D4C0C1E14AF6A00798008 /* CoolNotesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C0B1E14AF6A00798008 /* CoolNotesUITests.swift */; };
+		C67D4C1B1E14AF8F00798008 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C191E14AF8F00798008 /* Model.xcdatamodeld */; };
+		C67D4C1E1E1AEB2100798008 /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C1D1E1AEB2100798008 /* CoreDataStack.swift */; };
+		C67D4C2B1E1AF39600798008 /* Notebook.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C271E1AF39600798008 /* Notebook.swift */; };
+		C67D4C2C1E1AF39600798008 /* Notebook+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C281E1AF39600798008 /* Notebook+CoreDataProperties.swift */; };
+		C67D4C2D1E1AF39600798008 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C291E1AF39600798008 /* Note.swift */; };
+		C67D4C2E1E1AF39600798008 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C2A1E1AF39600798008 /* Note+CoreDataProperties.swift */; };
+		C67D4C311E1C825C00798008 /* CoreDataTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C301E1C825C00798008 /* CoreDataTableViewController.swift */; };
+		C67D4C331E1C838A00798008 /* NotebooksTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C321E1C838A00798008 /* NotebooksTableViewController.swift */; };
+		C67D4C351E1C8B9500798008 /* NotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C67D4C341E1C8B9500798008 /* NotesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +56,15 @@
 		C67D4C071E14AF6A00798008 /* CoolNotesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoolNotesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		C67D4C0B1E14AF6A00798008 /* CoolNotesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoolNotesUITests.swift; sourceTree = "<group>"; };
 		C67D4C0D1E14AF6A00798008 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C67D4C1A1E14AF8F00798008 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		C67D4C1D1E1AEB2100798008 /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		C67D4C271E1AF39600798008 /* Notebook.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notebook.swift; sourceTree = "<group>"; };
+		C67D4C281E1AF39600798008 /* Notebook+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notebook+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C67D4C291E1AF39600798008 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		C67D4C2A1E1AF39600798008 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C67D4C301E1C825C00798008 /* CoreDataTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataTableViewController.swift; sourceTree = "<group>"; };
+		C67D4C321E1C838A00798008 /* NotebooksTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotebooksTableViewController.swift; sourceTree = "<group>"; };
+		C67D4C341E1C8B9500798008 /* NotesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +115,8 @@
 		C67D4BEA1E14AF6A00798008 /* CoolNotes */ = {
 			isa = PBXGroup;
 			children = (
+				C67D4C2F1E1C824500798008 /* Controller */,
+				C67D4C1C1E1AEAE800798008 /* Model */,
 				C67D4BEB1E14AF6A00798008 /* AppDelegate.swift */,
 				C67D4BED1E14AF6A00798008 /* ViewController.swift */,
 				C67D4BEF1E14AF6A00798008 /* Main.storyboard */,
@@ -123,6 +143,29 @@
 				C67D4C0D1E14AF6A00798008 /* Info.plist */,
 			);
 			path = CoolNotesUITests;
+			sourceTree = "<group>";
+		};
+		C67D4C1C1E1AEAE800798008 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C67D4C271E1AF39600798008 /* Notebook.swift */,
+				C67D4C281E1AF39600798008 /* Notebook+CoreDataProperties.swift */,
+				C67D4C291E1AF39600798008 /* Note.swift */,
+				C67D4C2A1E1AF39600798008 /* Note+CoreDataProperties.swift */,
+				C67D4C1D1E1AEB2100798008 /* CoreDataStack.swift */,
+				C67D4C191E14AF8F00798008 /* Model.xcdatamodeld */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		C67D4C2F1E1C824500798008 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				C67D4C301E1C825C00798008 /* CoreDataTableViewController.swift */,
+				C67D4C321E1C838A00798008 /* NotebooksTableViewController.swift */,
+				C67D4C341E1C8B9500798008 /* NotesViewController.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,7 +306,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				C67D4BEE1E14AF6A00798008 /* ViewController.swift in Sources */,
+				C67D4C2E1E1AF39600798008 /* Note+CoreDataProperties.swift in Sources */,
+				C67D4C351E1C8B9500798008 /* NotesViewController.swift in Sources */,
+				C67D4C2D1E1AF39600798008 /* Note.swift in Sources */,
+				C67D4C2B1E1AF39600798008 /* Notebook.swift in Sources */,
+				C67D4C331E1C838A00798008 /* NotebooksTableViewController.swift in Sources */,
+				C67D4C2C1E1AF39600798008 /* Notebook+CoreDataProperties.swift in Sources */,
 				C67D4BEC1E14AF6A00798008 /* AppDelegate.swift in Sources */,
+				C67D4C1B1E14AF8F00798008 /* Model.xcdatamodeld in Sources */,
+				C67D4C1E1E1AEB2100798008 /* CoreDataStack.swift in Sources */,
+				C67D4C311E1C825C00798008 /* CoreDataTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -530,6 +582,20 @@
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		C67D4C191E14AF8F00798008 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				C67D4C1A1E14AF8F00798008 /* Model.xcdatamodel */,
+			);
+			currentVersion = C67D4C1A1E14AF8F00798008 /* Model.xcdatamodel */;
+			name = Model.xcdatamodeld;
+			path = ../Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = C67D4BE01E14AF6A00798008 /* Project object */;
 }
